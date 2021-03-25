@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            The air around you
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+</style>
+    </head>
+    <body>
+        <h2>The Air Around You</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>How healthy is your city?</h2>
+    <p>Click on your location or enter the name of your city.
+        <br>
+       
+    </p>
+    
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Here are the stats</h2>
+    <p>Air quality is a serious concern. Do not take it lightly.
+        <br>
+        <a href="#">Air Quality Stats by City</a>
+        <a href="#">What do air quality stats mean for us?</a>
+    </p>
+    <h4>World Average</h4>
+    <h4>Best City to breathe in</h4>
+    <h4>Worst City to breathe in</h4>
+  </div>
+ 
+</div>
+<footer>
+    Made by Team Asura. <br>
+    <address>Vitual in this virtual world</address> 
+</footer>
+
+    </body>
+    </html>
