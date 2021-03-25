@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>
-            The air around you
+            Your air quality index
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -38,13 +38,10 @@ footer {
    color: white;
    text-align: center;
 }
-#first{
+h1{
     font-family: sans-serif;
-    text-align: center;
+    text-align: left;
     color: darkmagenta;
-}
-button{
-padding: 0.3rem;
 }
 </style>
     </head>
@@ -52,21 +49,30 @@ padding: 0.3rem;
        <!-- <h1>#</h1> -->
 
 <div class="row">
-  <div class="column" id="first">
-      <header>
-    <h1>CARE</h1>
-    <p>
-        A Tomorrow's initiative
+  <div class="column">
+    <h1>The Air Around</h1>
+    <h2>How healthy is your city?</h2>
+    <p>Click on your location or enter the name of your city.
+        <br>
+        <form>
+            <label>City </label><input type ="search">
+            <button type="submit">Check</button>
+        </form>
     </p>
-   </header>
-    <button onclick="#">Check Your Parameters</button>
-    <button onclick="#">Volunteer to spread message</button>
+    <div id='results'>
+        Results are expected to be delivered here
+    </div>
   </div>
   <div class="column">
     <iframe
-    width= "100%"
-    height= "100%"
-    src ="https://aqicn.org/map/india/"></iframe>
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDMO77qExnrkb-QdZy6wJdPlqFpr-AU0oo
+    &q=Space+Needle,Seattle+WA">
+</iframe>
   </div>
 </div>
 <footer>
