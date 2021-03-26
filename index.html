@@ -92,6 +92,9 @@ section{
     <button class='q' onclick="wrong()">1000</button>
 </section>
 <section id="answer">
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
 </section>
   </div>
 </div>
@@ -109,6 +112,20 @@ section{
         score = score+1;
         x.innerHTML = "<strong>Correct Answer</strong>. Your cummulative score is: " + score;
     }
+    y = document.getElementById('demo');
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    y.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  y.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
 </script>
     </body>
     </html>
